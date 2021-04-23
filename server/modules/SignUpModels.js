@@ -3,23 +3,23 @@ const mongoose = require('mongoose')
 const signUpTemplate = new mongoose.Schema({
     fullName: {
         type:String,
-        required:True
+        required:true
     },
     username: {
         type:String,
-        required:True
+        required:true
     },
     email: {
         type:String,
-        required: True
+        required: true
     },
     password:{
         type:String,
-        required: True
+        required: true
     },
     date:{
         type:Date,
-        default:Dtae.now
+        default:Date.now
     }
 })
 

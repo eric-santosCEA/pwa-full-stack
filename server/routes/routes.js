@@ -8,8 +8,14 @@ router.post('/signup', (request, response) => {
         username: request.body.username,
         email: request.body.email,
         password: request.body.password
-})
+    })
     signUpUser.save()
+    .then(data => {
+        response.json(data)
+    })
+    .catch(err => {
+        response.json(err)
+    })
     })
     
 
